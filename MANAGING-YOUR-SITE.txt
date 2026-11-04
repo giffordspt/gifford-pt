@@ -38,7 +38,7 @@ Hollywood "website hack" — it's someone tricking you into giving up a password
 
 [ ] 1. Turn on TWO-FACTOR (2FA / two-step login) on EVERY account:
         - Website host (Netlify/Cloudflare)
-        - Domain registrar (where you bought giffordpt.com/.co.uk)
+        - Domain registrar (where you bought giffordspt.com/.co.uk)
         - Google account (your calendar / bookings live here)
         - Stripe / PayPal
         - Your email  <-- most important; it can reset all the others

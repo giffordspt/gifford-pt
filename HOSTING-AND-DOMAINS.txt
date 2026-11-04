@@ -1,6 +1,6 @@
 ===============================================================================
   GIFFORD PT — HOW TO PUT THIS WEBSITE ONLINE
-  (hosting + buying giffordpt.com and giffordpt.co.uk)
+  (hosting + buying giffordspt.com and giffordspt.co.uk)
   Written 2026-07-05. Prices are approximate — always check the live price
   on the day, they drift around.
 ===============================================================================
@@ -15,7 +15,7 @@ NOT need expensive hosting or anything with "cPanel", PHP or WordPress.
 -------------------------------------------------------------------------------
 
   1. HOST the site for FREE on Cloudflare Pages (or Netlify — both free).
-  2. BUY giffordpt.com  (~£9/year) and giffordpt.co.uk (~£7/year).
+  2. BUY giffordspt.com  (~£9/year) and giffordspt.co.uk (~£7/year).
   3. POINT both domains at the free host. Make one the "main" address and have
      the other automatically redirect to it, so both work.
 
@@ -30,11 +30,11 @@ NOT need expensive hosting or anything with "cPanel", PHP or WordPress.
 -------------------------------------------------------------------------------
 
 You want two names:
-    giffordpt.com      (the global / main one)
-    giffordpt.co.uk    (UK version — good for a UK personal trainer)
+    giffordspt.com      (the global / main one)
+    giffordspt.co.uk    (UK version — good for a UK personal trainer)
 
 First, check they're actually free to buy. Go to any registrar below and type
-"giffordpt" into their search. If they're taken you'll see it there.
+"giffordspt" into their search. If they're taken you'll see it there.
 
 WHERE TO BUY (cheapest, honest registrars — avoid GoDaddy, it upsells hard):
 
@@ -85,7 +85,7 @@ static site, the best options are FREE and faster than paid traditional hosting.
     https://netlify.com
     - Free tier: 100 GB bandwidth/month (plenty for a trainer's site).
     - Literally drag the gifford-pt folder onto their upload box and it's live
-      in ~10 seconds at a temporary address like giffordpt.netlify.app.
+      in ~10 seconds at a temporary address like giffordspt.netlify.app.
     - Free SSL, and you can attach your real domains in the dashboard.
     - EASIEST if you're not technical. Start here if unsure.
 
@@ -102,7 +102,7 @@ it for this site, but for completeness the cheapest reputable ones are):
     - Hostinger    ~£2-3/month   https://hostinger.co.uk
     - Namecheap    ~£1.50-3/month (Stellar shared hosting)
     - IONOS        cheap intro £1/month then rises (watch the renewal price)
-    Paid hosting gives you email @giffordpt.com and is worth it ONLY if you
+    Paid hosting gives you email @giffordspt.com and is worth it ONLY if you
     want a matching email address (see Part 5).
 
 
@@ -114,7 +114,7 @@ Once the site is uploaded (e.g. to Netlify) and the domains are bought, you tell
 the domain to point at the host. This is done with "DNS records".
 
 On Netlify:  Site settings -> Domain management -> "Add custom domain" ->
-             type giffordpt.com -> Netlify shows you the DNS records to set.
+             type giffordspt.com -> Netlify shows you the DNS records to set.
 
 On Cloudflare Pages: it's automatic if the domain is also at Cloudflare;
              otherwise you add a CNAME record they give you.
@@ -137,8 +137,8 @@ live worldwide. Don't panic if it's not instant.
 
 You own two names but you only want to maintain ONE website. So:
 
-    - Pick a MAIN address, e.g. giffordpt.com
-    - Set giffordpt.co.uk to REDIRECT to giffordpt.com (or vice-versa).
+    - Pick a MAIN address, e.g. giffordspt.com
+    - Set giffordspt.co.uk to REDIRECT to giffordspt.com (or vice-versa).
 
 That way, whichever a visitor types, they land on the same site and you only
 update it in one place.
@@ -147,19 +147,19 @@ Netlify:  add BOTH domains to the same site; set one as "primary" and Netlify
           auto-redirects the other to it. Zero effort.
 Cloudflare: use a "Redirect Rule" (free) to forward one domain to the other.
 
-Which should be main? For a UK personal trainer, giffordpt.co.uk signals "local"
+Which should be main? For a UK personal trainer, giffordspt.co.uk signals "local"
 and can help with UK Google results — but .com is more memorable/global. Either
 is fine. I'd suggest .com as main with .co.uk redirecting to it, unless you're
 purely targeting local UK clients, in which case flip it.
 
 
 -------------------------------------------------------------------------------
-  PART 5 — (OPTIONAL) EMAIL @giffordpt.com
+  PART 5 — (OPTIONAL) EMAIL @giffordspt.com
 -------------------------------------------------------------------------------
 
-Free hosting does NOT give you email. If Jack wants hello@giffordpt.com:
+Free hosting does NOT give you email. If Jack wants hello@giffordspt.com:
     - Cheapest: Cloudflare Email Routing (FREE) — forwards
-      anything@giffordpt.com to his normal Gmail. He can RECEIVE for free.
+      anything@giffordspt.com to his normal Gmail. He can RECEIVE for free.
       To SEND from that address too, pair it with a free-ish tool or use...
     - Google Workspace (~£5/user/month) or Microsoft 365 — proper mailbox,
       send + receive, calendar, etc.
@@ -192,25 +192,25 @@ You can open the site locally any time to preview changes:
   STEP-BY-STEP QUICKSTART (the whole thing, start to finish)
 -------------------------------------------------------------------------------
 
-  1. Go to porkbun.com, search "giffordpt", buy giffordpt.com AND giffordpt.co.uk.
+  1. Go to porkbun.com, search "giffordspt", buy giffordspt.com AND giffordspt.co.uk.
      Turn on domain privacy + auto-renew. (~£16 total for the year.)
 
   2. Go to netlify.com, make a free account.
 
   3. Drag the whole "gifford-pt" folder onto Netlify's upload box.
-     -> Your site is instantly live at something like giffordpt.netlify.app.
+     -> Your site is instantly live at something like giffordspt.netlify.app.
      Check it looks right.
 
-  4. In Netlify: Domain settings -> add giffordpt.com and giffordpt.co.uk.
+  4. In Netlify: Domain settings -> add giffordspt.com and giffordspt.co.uk.
      Netlify shows you the DNS records to enter.
 
   5. Log in at Porkbun -> DNS settings for each domain -> paste the records
      Netlify gave you.
 
-  6. Set giffordpt.com as the primary domain in Netlify (it'll auto-redirect
+  6. Set giffordspt.com as the primary domain in Netlify (it'll auto-redirect
      the .co.uk to it).
 
-  7. Wait a little while for DNS to update, then visit giffordpt.com — done!
+  7. Wait a little while for DNS to update, then visit giffordspt.com — done!
 
   8. Later: add Jack's photos to the assets/ folder and edit the placeholder
      text (search for the pencil "EDIT" markers in index.html — see README.md),
