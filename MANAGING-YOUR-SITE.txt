@@ -1,0 +1,150 @@
+===============================================================================
+  GIFFORD PT — MANAGING YOUR SITE YOURSELF (+ keeping client data safe)
+  Written 2026-07-12. Plain-English, no jargon.
+===============================================================================
+
+-------------------------------------------------------------------------------
+  FIRST, THE IMPORTANT BIT ABOUT DATA SAFETY
+-------------------------------------------------------------------------------
+
+Your website is a "static" site — just pages (text, images, styling). It has:
+    - NO database
+    - NO client logins
+    - NO stored customer records
+
+So there is NO pot of client data sitting on the website for anyone to steal.
+If someone broke into the hosting, the worst case is they mess with the page
+text — there's no customer list there to take, because one doesn't exist.
+
+Your clients' actual data lives with specialist companies whose whole job is to
+keep it safe:
+
+  * BOOKINGS  -> Google Calendar (bookings land straight in your calendar with
+                                  the client's name, email and chosen time)
+  * PAYMENTS  -> Stripe / PayPal (card details — handled entirely by them;
+                                  the data never touches your website and you
+                                  never see or store card numbers yourself)
+  * ENQUIRIES / REVIEWS -> your email + Instagram
+
+That's a deliberately safe design. It means your security job is simple:
+protect your ACCOUNTS. The real-world risk for a small business is not a
+Hollywood "website hack" — it's someone tricking you into giving up a password
+(phishing). Guard against that and you've covered the big risks.
+
+
+-------------------------------------------------------------------------------
+  YOUR SECURITY CHECKLIST  (do these once, then relax)
+-------------------------------------------------------------------------------
+
+[ ] 1. Turn on TWO-FACTOR (2FA / two-step login) on EVERY account:
+        - Website host (Netlify/Cloudflare)
+        - Domain registrar (where you bought giffordpt.com/.co.uk)
+        - Google account (your calendar / bookings live here)
+        - Stripe / PayPal
+        - Your email  <-- most important; it can reset all the others
+        - Instagram
+     2FA means even if someone gets your password, they still can't get in.
+
+[ ] 2. Use a PASSWORD MANAGER (e.g. Bitwarden - free, or the one built into
+        your phone/browser). Give every account a different strong password.
+        Never reuse the same password across sites.
+
+[ ] 3. Make sure the site shows HTTPS (a padlock in the browser bar). This is
+        automatic and free on Netlify/Cloudflare — it encrypts everything sent
+        between visitors and the site. Don't take payments on anything without it.
+
+[ ] 4. Turn on "domain lock" / "registrar lock" at your domain registrar, and
+        2FA there. This stops anyone hijacking your domain name.
+
+[ ] 5. Collect only what you need. In Calendly, don't add extra questions asking
+        for sensitive info you don't require. Less data collected = less to worry
+        about.
+
+[ ] 6. Don't keep loose copies of client lists in random places (old emails,
+        unprotected spreadsheets, WhatsApp). Let Calendly be the record.
+
+[ ] 7. Be suspicious of emails/texts asking you to "log in" or "confirm your
+        payment details" via a link. Go to the site directly instead. This is
+        how most small businesses actually get compromised.
+
+[ ] 8. (UK/GDPR) Because Calendly and Stripe process your clients' personal
+        data, you should have a short PRIVACY POLICY on the site saying what you
+        collect and who processes it. Ask me and I'll draft a starter one for you.
+
+
+-------------------------------------------------------------------------------
+  MANAGING THE SITE DAY-TO-DAY  (easier than you'd think)
+-------------------------------------------------------------------------------
+
+There are no servers to babysit, no software to update, no database to back up.
+A static site is about the lowest-maintenance thing there is. Here's what you'd
+actually do:
+
+CHANGE WORDS ON THE PAGE (services, bio, FAQ answers, timetable):
+  1. Open the file  gifford-pt/index.html  in any text editor (even Notepad,
+     though "VS Code" - free - is nicer and colour-codes things).
+  2. Search for the pencil marks  EDIT  to find every changeable bit, OR just
+     find the text you want to change.
+  3. Type your new text between the tags, e.g.
+        <h3>Boxing</h3>   ->   <h3>Boxing & Pad Work</h3>
+     Don't touch the < > tags themselves, just the words between them.
+  4. Save the file.
+  5. Put it live (see "PUBLISHING CHANGES" below).
+
+ADD A REVIEW:
+  In index.html, find the Reviews section, copy one whole
+  <blockquote class="card review"> ... </blockquote> block, paste it below the
+  others, and edit the quote + name. Save & publish. (You add these by hand on
+  purpose, so no trolls can spam fake ones.)
+
+CHANGE CLASS TIMES:
+  In index.html, find the timetable and edit the day blocks. Save & publish.
+
+CHANGE BOOKING TIMES OR PRICES:
+  You do this inside GOOGLE CALENDAR (your appointment schedule) — NOT in the
+  website files. It instantly updates what clients can book. No code needed.
+
+ADD JACK'S PHOTO:
+  Drop a photo named  jack.jpg  into the  gifford-pt/assets/  folder, publish.
+
+
+-------------------------------------------------------------------------------
+  PUBLISHING CHANGES (getting edits onto the live site)
+-------------------------------------------------------------------------------
+
+Whichever host you chose (see HOSTING-AND-DOMAINS.txt):
+
+  NETLIFY (drag-and-drop) — easiest:
+     Go to your site in the Netlify dashboard -> "Deploys" -> drag the whole
+     gifford-pt folder onto the upload area. Live in ~10 seconds.
+
+  NETLIFY / CLOUDFLARE via GitHub — tidier long-term:
+     If the site is connected to a GitHub repo, you edit the files, "commit"
+     the change, and it republishes itself automatically. This also keeps a
+     history so you can undo mistakes. (A bit more to learn up front.)
+
+Tip: after publishing, do a hard refresh (Ctrl+F5) if you don't see the change
+straight away — that's just your browser showing a cached copy.
+
+
+-------------------------------------------------------------------------------
+  WHAT YOU CAN DO YOURSELF vs WHEN TO ASK FOR HELP
+-------------------------------------------------------------------------------
+
+Comfortable to do yourself once set up:
+  - Edit text, prices (in Calendly), timetable, add reviews, swap photos.
+  - Publish updates (drag-and-drop).
+
+Worth asking for help with (one-off or occasional):
+  - First-time setup of hosting, domain and Calendly+payments.
+  - Adding a new SECTION or changing the design/layout.
+  - Writing the privacy policy.
+  - Anything where you'd be editing the styling (CSS) or scripts (JS).
+
+You don't need to become a web developer to run this. If you can edit a document
+and drag a folder, you can keep this site up to date.
+
+===============================================================================
+  See also:  README.md (content + Calendly/payment setup)
+             HOSTING-AND-DOMAINS.txt (hosting + buying the domains)
+===============================================================================
