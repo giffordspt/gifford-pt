@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gifford-pt.pages.dev/sitemap.xml
+Sitemap: https://giffordspt.co.uk/sitemap.xml
