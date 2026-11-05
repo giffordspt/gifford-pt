@@ -264,6 +264,18 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 .fs-quote .stars { color: #e6a700; letter-spacing: 0.15em; margin-bottom: 0.6rem; }
 .fs-quote > p { font-size: 1.08rem; color: var(--text); }
 .fs-quote footer { margin-top: 1rem; color: var(--green-dark); font-weight: 700; }
+.fs-quote .journey-label {
+  color: var(--green-dark); font-size: 0.79rem; font-weight: 800;
+  letter-spacing: 0.055em; text-transform: uppercase; margin-bottom: 0.7rem;
+}
+.google-reviews-heading {
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  margin-top: 2.7rem; margin-bottom: 1.25rem; text-align: center;
+}
+.google-review-source {
+  display: block; color: var(--muted); font-size: 0.78rem;
+  font-weight: 500; margin-top: 0.25rem;
+}
 .story-soon {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   text-align: center; border-style: dashed; background: var(--bg-soft);
