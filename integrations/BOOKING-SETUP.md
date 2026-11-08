@@ -55,7 +55,7 @@ Once the Cloudflare and Apps Script components are deployed and configured:
 
 ## 5. Policy
 - Clients can cancel / reschedule through their confirmation email.
-- A change with 48 hours or less before the original start time generates a **48-HOUR ALERT** email to giffordspt@gmail.com once configured.
+- A change with 48 hours or less before the original start time generates a **48-HOUR ALERT** email to giffordspt@gmail.com once configured; this is a notification threshold, not automatically a cancellation-fee policy.
 - Host-initiated cancellations are skipped when Calendly identifies the canceler as the host.
 - A reschedule is shown as **RESCHEDULED** (since Calendly sends a cancellation webhook for the previous slot).
 - Alerts **do not deduct session credits** or charge payments automatically. Review the customer's agreement and package manually.
